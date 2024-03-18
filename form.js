@@ -16,7 +16,7 @@ menuBarClose.addEventListener("click", () => {
   menuBarClose.style.display = "none";
 });
 
-// animation js code
+// animation text changing js code
 document.addEventListener("DOMContentLoaded", () => {
   const options = {
     string: ["Youtuber", "Web Developer", "Programmer", "UI UX Developer"],

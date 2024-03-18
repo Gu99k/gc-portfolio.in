@@ -31,6 +31,7 @@ body {
   --hover-color: #d7d7d7;
   --blcak-color: #000000;
   --lightcyan-color: lightcyan;
+  --hover-color: #00cd88;
 }
 /* <!-- Whole project Start From Here///////////////////////////////////////////////////////////// --> */
 
@@ -160,7 +161,7 @@ body {
 }
 
 .navbar #menubar {
-  font-size: 2rem;
+  font-size: 1.5rem;
   z-index: 1;
   padding: 5px;
   cursor: pointer;
@@ -732,6 +733,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.more-details a {
+  text-decoration: none;
+  color: var(--blcak-color);
+}
+
 .more-details a i {
   padding: 5px 10px;
   color: var(--blcak-color);
@@ -756,13 +762,6 @@ body {
   align-items: flex-start;
   align-self: stretch;
 }
-.con-details {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 24px;
-  line-height: 3rem;
-}
 .con-h-sbh {
   display: flex;
   flex-direction: column;
@@ -776,6 +775,21 @@ body {
 }
 .con-h-sbh p {
   font-size: 1rem;
+}
+.con-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  line-height: 3rem;
+}
+.con-details .sendmail {
+  color: var(--blcak-color);
+  text-decoration: none;
+}
+.con-details .sendmail:hover {
+  color: var(--hover-color);
+  transition: all ease-out 0.3s;
 }
 .social-media {
   display: flex;
@@ -840,7 +854,7 @@ body {
 
 /* <!-- Contact-section-close////////////////////////////////////////////////////////////////////////////// --> */
 
-/* <!-- Contact-section-start////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- footer-section-start////////////////////////////////////////////////////////////////////////////// --> */
 #footer-section {
   background: var(--dark-color);
   width: 100%;
@@ -880,13 +894,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.logo-txt2 {
-}
+
 .abt-wrap {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 .social-media2 {
@@ -902,7 +915,7 @@ body {
   color: var(--white-color);
 }
 
-/* <!-- Contact-section-close////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- footer-section-close////////////////////////////////////////////////////////////////////////////// --> */
 
 @media only screen and (max-width: 1180px) {
   .container {
