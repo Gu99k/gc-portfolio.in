@@ -46,15 +46,6 @@ body {
 }
 /* <!-- Top page view content///////////////////////////////////////////////////////////// --> */
 
-.hero {
-  display: flex;
-  width: 100%;
-  padding-top: 40px;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .navbar {
   display: flex;
   padding: 0px 124px;
@@ -174,11 +165,6 @@ body {
   cursor: pointer;
   z-index: 1;
 }
-/* #menu-sidebar {
-  position: relative;
-  max-width: 150px;
-  width: 100%;
-} */
 .menu-item {
   position: fixed;
   top: 80px;
@@ -220,7 +206,13 @@ body {
 }
 /* <!-- Header-Navbar Close///////////////////////////////////////////////////////////// --> */
 /* <!-- Top Page view Main-content start///////////////////////////////////////////////////////////// --> */
-
+.hero {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
 .container {
   display: flex;
   padding: 0px 124px;
@@ -974,10 +966,16 @@ body {
     width: 90%;
   }
 }
+/* @media only screen and (max-width: 815px) {
+
+} */
 
 @media only screen and (max-width: 815px) {
   .nav-links {
     display: none;
+  }
+  .navbar #menubar {
+    display: block;
   }
   .image {
     width: 360px;

@@ -27,16 +27,6 @@ menuISection.forEach((element) => {
     closeMenu();
   });
 });
-//   menu bar show only in mini device
-function screenWidth() {
-  if (innerWidth >= 815) {
-    menuBar.style.display = "none";
-  } else {
-    menuBar.style.display = "block";
-  }
-}
-// Adjust on window resize
-window.addEventListener("resize", screenWidth);
 
 // animation text changing js code
 document.addEventListener("DOMContentLoaded", () => {
