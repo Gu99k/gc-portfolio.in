@@ -2,19 +2,41 @@
 const menuBar = document.querySelector("#menubar");
 const menuItem = document.querySelector(".menu-item");
 const menuBarClose = document.querySelector("#menubar-close");
+const menuISection = document.querySelectorAll(".menu-i-section");
 
-menuBar.addEventListener("click", () => {
-  // menuItem.style.width = "200px";
-  menuItem.style.display = "block";
+// Open menu
+
+function openMenu() {
+  menuItem.style.right = "0";
   menuBar.style.display = "none";
   menuBarClose.style.display = "block";
-});
+}
+menuBar.addEventListener("click", openMenu);
 
-menuBarClose.addEventListener("click", () => {
-  menuItem.style.display = "none";
+// Close menu
+function closeMenu() {
+  menuItem.style.right = "-100%";
   menuBar.style.display = "block";
   menuBarClose.style.display = "none";
+}
+menuBarClose.addEventListener("click", closeMenu);
+
+// Close menu when a menu link is clicked
+menuISection.forEach((element) => {
+  element.addEventListener("click", () => {
+    closeMenu();
+  });
 });
+//   menu bar show only in mini device
+function screenWidth() {
+  if (innerWidth >= 815) {
+    menuBar.style.display = "none";
+  } else {
+    menuBar.style.display = "block";
+  }
+}
+// Adjust on window resize
+window.addEventListener("resize", screenWidth);
 
 // animation text changing js code
 document.addEventListener("DOMContentLoaded", () => {
